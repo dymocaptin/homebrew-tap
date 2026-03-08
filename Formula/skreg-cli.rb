@@ -5,24 +5,24 @@ class SkregCli < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/dymocaptin/skreg/releases/download/v0.1.2/skreg-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "e1e48ba31b1bca0a7643699965a4217d697de1acdcbf2c660bda291497497a3d"
+      sha256 "22a76f0a5cd6856b708cf46ca1f93098ad36c4b536d8a83b22aaa38149dc299a"
     end
     if Hardware::CPU.intel?
       url "https://github.com/dymocaptin/skreg/releases/download/v0.1.2/skreg-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "f79edc73b717df06f454b9e0539b2dea1ac5a70a1d56c6e5ee455e21f3912dd8"
+      sha256 "fc199e76d1973a753b268588849ab4ba63ef55dc11250aa3da96c05648d18dac"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/dymocaptin/skreg/releases/download/v0.1.2/skreg-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f466870cff8b25cd4385bea9f3c6778b02ad23ca1fb26e24162d6762ddbd0114"
+      sha256 "27799783f9cd586e0155f25572c694eafd3db9c1751216c60a8a5c2bf30149ac"
     end
     if Hardware::CPU.intel?
       url "https://github.com/dymocaptin/skreg/releases/download/v0.1.2/skreg-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "850105bcf610d64d5dfc19cf5b1e9cdfee6564431cbe605eccb2f303c930ceac"
+      sha256 "50a9b673f2dd9ff75f36fb0c87075240c6e3ae0a97a09ec18221405260d49815"
     end
   end
-  license "Apache 2.0"
+  license "Apache-2.0"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
