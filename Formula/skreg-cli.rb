@@ -1,25 +1,25 @@
 class SkregCli < Formula
   desc "A command line tool for manging AI skills which are verified and trusted"
   homepage "https://skreg.ai"
-  version "0.3.1"
+  version "0.3.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.1/skreg-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "31a15593a5c699ce11c4eaaba28a2e5f1623e0c73774db6407ed975ebc3102fd"
+      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.2/skreg-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "1bc8d2b84d05065892396a9e79693e8a17f187d9260b936b704df53ab136bb11"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.1/skreg-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "8ac363e5b4cfdfa8344df00b6f6fd1074c7c4067c73fcf46902e9ede1001623f"
+      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.2/skreg-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "6604c385962aaf0fe684bfb8387b24c50b8832cec440eec463149fc2f9fe0ce7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.1/skreg-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "113dc6959906f8f3e29ef2eaa71a575c65cb19ffa995d1d0aa24c3146a7c1169"
+      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.2/skreg-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9c400c4234ceefec17534e9f8ac2314470bc343265b73373db20150a33b661fd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.1/skreg-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6c009d86c049d0929b11a0fdc3de08348d2ad6274ec4bfcce99808b3a7ba80bf"
+      url "https://github.com/dymocaptin/skreg/releases/download/v0.3.2/skreg-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c2c596c99f142f795a9e7ccfec894bff2c8fc8fae616549a54961e4ba5c88097"
     end
   end
   license "Apache-2.0"
